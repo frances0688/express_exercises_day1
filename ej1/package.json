@@ -1,0 +1,27 @@
+{
+	"name": "express_day1_exercises",
+	"version": "1.0.0",
+	"description": "",
+	"main": "ej1.js",
+	"scripts": {
+		"start": "node ej1.js",
+		"dev": "nodemon ej1.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/frances0688/express_exercises_day1.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/frances0688/express_exercises_day1/issues"
+	},
+	"homepage": "https://github.com/frances0688/express_exercises_day1#readme",
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	},
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}
