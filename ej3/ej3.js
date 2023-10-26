@@ -40,7 +40,7 @@ app.get("/productos", (req, res) => {
 	res.send({ description: "Productos", items });
 });
 
-app.post("/productos", (req, res) => {
+app.post("/productos/create", (req, res) => {
 	const newProduct = {
 		id: items.length + 1,
 		nombre: req.body.nombre,
@@ -50,7 +50,7 @@ app.post("/productos", (req, res) => {
 	res.status(201).send(items);
 });
 
-app.put("/productos/:id", (req, res) => {
+app.put("/productos/update/:id", (req, res) => {
 	const found = items.some(
 		(item) => item.id == req.params.id
 	);
@@ -71,7 +71,7 @@ app.put("/productos/:id", (req, res) => {
 	}
 });
 
-app.delete("/productos/:id", (req, res) => {
+app.delete("/productos/delete/:id", (req, res) => {
 	const found = items.some(
 		(item) => item.id == req.params.id
 	);
